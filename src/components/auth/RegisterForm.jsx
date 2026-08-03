@@ -120,7 +120,7 @@ const RegisterForm = () => {
             </div>
 
           </div>
-                    <div>
+          <div>
 
             <label className="block mb-2 font-medium">
               Email
@@ -142,6 +142,20 @@ const RegisterForm = () => {
 
             </div>
 
+          </div>
+
+          <div>
+            <label className="block mb-2 font-medium">Account Type / Role</label>
+            <select
+              name="role"
+              value={formData.role || "user"}
+              onChange={handleChange}
+              className="w-full border rounded-lg px-3 py-3 focus:outline-none focus:border-violet-600 bg-white"
+            >
+              <option value="user">User (Client)</option>
+              <option value="tarot_reader">Tarot Reader</option>
+              <option value="spiritual_consultant">Spiritual Consultant</option>
+            </select>
           </div>
 
           <div>
